@@ -1,0 +1,113 @@
+@import "../../styles/abstracts/mixins";
+
+.header{
+  height: 80vh;
+  background-image:
+            linear-gradient(to right, rgba(#000, .6), rgba(rgb(226, 143, 9), .5)),
+            url(https://images.unsplash.com/photo-1555903863-3328d48770ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+@include breakpoints(md){
+  background-image: linear-gradient(to top, rgba(#000, .6), rgba(rgb(226, 143, 9), .5));
+  height: 40vh;
+}
+@include breakpoints(sm){
+  height: 25vh;
+}
+
+}
+
+.heading-text{
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  font-weight: bolder;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @include breakpoints(sm){
+      position: relative;
+  }
+  @media(max-width: 1461px){
+    position: relative;
+  }
+  @include breakpoints(md){
+    position: relative;
+}
+  @include breakpoints(xl){
+
+}
+
+  &__main{
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    animation: moveUp ease .5s .5s;
+
+    @media(max-width: 1461px){
+      font-size: 4rem;
+    }
+  }
+  &__sub{
+    font-size: 3rem;
+    animation: moveDown ease .5s .5s;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    align-items: center;
+    column-gap: 1rem;
+
+    @include breakpoints(md){
+      grid-template-columns: 8rem max-content 8rem;
+      justify-content: center;
+  }
+  @media(max-width: 1461px){
+    grid-template-columns: 10rem max-content 10rem;
+    justify-content: center;
+  }
+    &::before, &::after{
+      content: "";
+      display: block;
+      background-color: var(--gold-dark);
+      height: 3px;
+    }
+  }
+}
+
+
+@keyframes moveUp{
+  0%{
+    transform: translateY(2.2rem);
+  }
+  25%{
+    transform: translateY(1rem);
+  }
+  50%{
+    transform: translateY(.8rem);
+  }
+  75%{
+    transform: translateY(.4rem);
+  }
+  100%{
+    transform: translateY(0rem);
+  }
+}
+@keyframes moveDown{
+  0%{
+    transform: translateY(-1.2rem);
+  }
+  25%{
+    transform: translateY(-1rem);
+  }
+  50%{
+    transform: translateY(-.8rem);
+  }
+  75%{
+    transform: translateY(-.4rem);
+  }
+  100%{
+    transform: translateY(0rem);
+  }
+}
+

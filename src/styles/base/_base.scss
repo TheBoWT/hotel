@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size:62.5%;
+
+  @include breakpoints(xl){
+    font-size: 75%;  // 1 rem equal to 12 px
+  }
+  @include breakpoints(lg){
+    font-size: 62.5%;
+  }
+  @include breakpoints (md){
+    font-size: 50%;
+  }
+  @include breakpoints(sm){
+    font-size: 43.75%;
+  }
+}
+

@@ -1,0 +1,39 @@
+.rooms{
+  background-color: var(--bg);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  grid-column-gap: 3rem;
+}
+
+.room{
+
+  &__img{
+
+  height: 20rem;
+  width: 20rem;
+    transition: all 1s ease;
+
+    &--1{
+      grid-row: 1 / 6;
+    }
+  }
+
+
+}
+.test{
+  overflow: hidden;
+  display: inline-block;
+  border-radius: .3rem;
+}
+
+.test:hover .room__img{
+  transform: scale(1.1) rotate(2deg);
+
+}
+
+.section-heading{
+  grid-column: 1 / -1;
+  justify-self: center;
+  margin-bottom: 3rem;
+  text-shadow: -3rem 2rem 2px black, 3rem 2rem 2px black;
+}

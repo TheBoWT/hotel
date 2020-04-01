@@ -1,0 +1,32 @@
+.btn{
+  background-color: var(--gold-dark);
+  padding: .8rem 2rem;
+  color: #fff;
+  border: none;
+  font-size: 1.7rem;
+  cursor: pointer;
+  border-radius: 5px;
+
+  &:hover{
+    background-color: var(--gold-light);
+  }
+  &:focus{
+    outline: none;
+  }
+}
+
+.btn--arrow{
+  position: relative;
+
+  &::after{
+    content: "\003E";
+    position: absolute;
+    right: 1rem;
+    transition: all .5s ease;
+  }
+  &:hover::after{
+    right: .6rem;
+  }
+}
+
+

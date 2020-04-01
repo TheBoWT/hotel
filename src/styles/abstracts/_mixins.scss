@@ -1,0 +1,24 @@
+@mixin breakpoints ($device) {
+  @if($device == sm){
+    @media(max-width:37.5em){
+      @content
+   }
+  };
+   @if($device == md){
+     @media(max-width: 56.25em){
+       @content
+     }
+   };
+   @if($device == lg){
+     @media(max-width: 62.5em){
+       @content
+     }
+   };
+   @if($device == xl){
+     @media(min-width: 75em){
+       @content
+     }
+   };
+  }
+
+
