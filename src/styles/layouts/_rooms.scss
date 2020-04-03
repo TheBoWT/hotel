@@ -1,3 +1,7 @@
 app-rooms{
   grid-column: center-s / center-e;
+
+  @media(max-width: 600px){
+    grid-column: full-s / full-e;
+  }
 }
