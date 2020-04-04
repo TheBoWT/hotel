@@ -8,32 +8,27 @@
 
   @media(max-width: 1000px){
     grid-template-columns: repeat(2, 1fr);
-    grid-row: 5rem;
+    grid-row-gap: 5rem;
     padding: 5rem 10rem;
   }
-  @media(max-width: 600px){
-    grid-template-columns:  1fr;
-    justify-items: center;
-    padding: 0;
 
+  @media(max-width: 600px){
+    justify-items: center;
 
   }
 
   font-size: 1.5rem;
 &>*{
-  border: solid thin white;
   @media(max-width: 1120px){
     padding-left: 3rem;
   }
-  @media(max-width: 600px){
-    padding-left: 0;
-  }
+
 }
 
   &__heading{
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   &__brand{
     color: var(--gold-dark);
@@ -61,7 +56,6 @@
 }
 
 .quick-link{
-
   .list{
     list-style: none;
 
@@ -81,10 +75,11 @@
     }
   }
 }
-
-
-
-  .reservations{
-
+.reservations, .location, .social, .quick-link{
+  @media(max-width: 600px){
+    grid-column: 1 / -1;
+    text-align: center;
   }
+}
+
 }
