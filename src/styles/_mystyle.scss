@@ -1,6 +1,19 @@
 .btn{
+  &--primary{
   background-color: var(--gold-dark);
-  padding: .8rem 2rem;
+  }
+  &--secondary{
+    background-color: transparent;
+    color: var(--gold-dark);
+    border: thick var(--gold-light) solid;
+    transition: background .3s ease;
+
+    &:hover{
+      background-color: var(--gold-dark);
+      color: #fff;
+    }
+    }
+  padding: 1rem 2.3rem;
   color: #fff;
   border: none;
   font-size: 1.7rem;
@@ -21,11 +34,16 @@
   &::after{
     content: "\003E";
     position: absolute;
-    right: 1rem;
+    right: .7rem;
+    top: .9rem;
     transition: all .5s ease;
+
+    @media (max-width:600px){
+     content: "";
+    }
   }
   &:hover::after{
-    right: .6rem;
+    right: .3rem;
   }
 }
 

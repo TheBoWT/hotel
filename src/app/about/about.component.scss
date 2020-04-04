@@ -121,11 +121,7 @@
   @include breakpoints(md){
     text-align: center;
   }
-  .btn::after{
-    @include breakpoints(sm){
-      content: "";
-    }
-  }
+
 }
 
 
