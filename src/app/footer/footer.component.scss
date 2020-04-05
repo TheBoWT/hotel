@@ -76,7 +76,7 @@
   }
 }
 .reservations, .location, .social, .quick-link{
-  @media(max-width: 600px){
+  @media(max-width: 420px){
     grid-column: 1 / -1;
     text-align: center;
   }
