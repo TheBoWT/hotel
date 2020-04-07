@@ -1,4 +1,12 @@
-.btn{
+.mybtn{
+
+  padding: 1rem 2.3rem;
+  color: #fff;
+  border: none;
+  font-size: 1.7rem;
+  cursor: pointer;
+  border-radius: 5px;
+
   &--primary{
   background-color: var(--gold-dark);
   }
@@ -12,13 +20,7 @@
       background-color: var(--gold-dark);
       color: #fff;
     }
-    }
-  padding: 1rem 2.3rem;
-  color: #fff;
-  border: none;
-  font-size: 1.7rem;
-  cursor: pointer;
-  border-radius: 5px;
+  }
 
   &:hover{
     background-color: var(--gold-light);
@@ -28,7 +30,7 @@
   }
 }
 
-.btn--arrow{
+.mybtn--arrow{
   position: relative;
 
   &::after{
@@ -46,5 +48,3 @@
     right: .3rem;
   }
 }
-
-

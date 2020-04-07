@@ -10,7 +10,7 @@
   font-size:62.5%;
 
   @include breakpoints(xl){
-    font-size: 75%;  // 1 rem equal to 12 px
+    font-size: 75%;
   }
   @include breakpoints(lg){
     font-size: 62.5%;
@@ -21,6 +21,10 @@
   @include breakpoints(sm){
     font-size: 43.75%;
   }
+}
+
+body{
+  background-color: #FDFDFD;
 }
 
 

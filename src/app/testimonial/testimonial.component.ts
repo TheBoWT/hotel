@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./testimonial.component.scss']
 })
 export class TestimonialComponent implements OnInit {
-
+  showNavigationIndicators: false;
   constructor() { }
 
   ngOnInit() {

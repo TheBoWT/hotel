@@ -1,0 +1,63 @@
+
+
+.picsum-img-wrapper{
+  padding: 1rem;
+  height: 28rem;
+  color: #000;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  text-transform: uppercase;
+  color: gray;
+  align-items: start;
+  justify-content: center;
+
+  @media(max-width:1100px){
+    height: 30rem;
+  }
+  @media(max-width:850px){
+    height: 31rem;
+  }
+  @media(max-width:550px){
+    height: 33rem;
+  }
+  @media(max-width:400px){
+    height: 35rem;
+  }
+
+  &>h1{
+    display: inline-block;
+    transform: translateY(3.2rem);
+    font-family: fantasy;
+    font-size: 3rem;
+  }
+
+}
+
+
+.carousel-caption{
+ font-size: 1.5rem;
+ color: #000;
+
+ h2{
+  color: gray;
+  margin-top:1rem;
+}
+}
+.carousel-control-prev-icon{
+  background: url(https://images.unsplash.com/photo-1556385600-81ca04c88cb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+}
+.stars{
+  color: var(--gold-dark);
+}
+.fa-star{
+  padding: 2px;
+}
+
+
+.img{
+  width: 12rem;
+  height: 10rem;
+  border-radius: 100%;
+  border: gray thick solid;
+}
+

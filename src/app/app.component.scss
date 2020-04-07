@@ -1,4 +1,4 @@
-.container{
+.wrapper{
   display: grid;
   grid-template-columns: [full-s] minmax(3rem, 1fr) [center-s] repeat(12, 1fr) [center-e] minmax(3rem, 1fr) [full-e];
 }

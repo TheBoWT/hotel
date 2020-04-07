@@ -1,4 +1,4 @@
-.nav{
+.mynav{
   background-color: #fff;
   padding: 2rem 2rem;
   max-width: 100rem;
@@ -10,12 +10,10 @@
   display: flex;
   align-items: center;
 
-
-
   &__item{
     padding: 0 2rem;
   }
-  &
+
   &__brand{
     margin-right: auto;
     font-size: 2rem;

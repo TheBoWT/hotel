@@ -1,4 +1,5 @@
 .features{
+  margin-bottom: 5rem;
   .feature{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -34,7 +35,7 @@
       margin-bottom: 2rem;
     }
     &__content{
-      background-color: rgba(214, 200, 200, 0.746);
+      background-color: rgba(214, 200, 200, 0.794);
       padding: 3rem;
       font-size: 2rem;
 
@@ -73,12 +74,11 @@
       @media (max-width:600px){
         grid-column: 1 / -1;
         grid-row: 1 / -1;
-        background-color: #fff;
       }
     }
   }
 
-  .btn{
+  .mybtn{
     margin-top: 2rem;
     color: #fff;
   }
