@@ -8,6 +8,7 @@
 
 }
 
+
 .form{
   height: 15rem;
   display: flex;
@@ -33,10 +34,7 @@
     padding: 5rem;
   }
 
-  &__group{
-    width: 100%;
 
-  }
   &__group:not(:last-child){
     margin-right: 1rem;
   }
@@ -81,5 +79,6 @@
     width: 100%;
   }
 }
+
 
 
